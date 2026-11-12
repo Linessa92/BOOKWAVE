@@ -33,7 +33,7 @@ jobs:
           gradle-version: '8.9'
 
       - name: Extract project
-        run: unzip -q BOOKWAVE8_READ_BUTTON.zip -d project
+        run: unzip -q BOOKWAVE_READER_IMMERSIVE_FIX.zip -d project
 
       - name: Build APK
         run: gradle -p project/BOOKWAVE_ANDROID :app:assembleDebug --no-daemon
