@@ -33,7 +33,7 @@ jobs:
           gradle-version: '8.9'
 
       - name: Extract project
-        run: unzip -q BOOKWAVE_OFFLINE_AUDIO_WAV.zip -d project
+        run: unzip -q run: unzip -q BOOKWAVE_UNIVERSAL_TTS.zip -d project
 
       - name: Build APK
         run: gradle -p project/BOOKWAVE_ANDROID :app:assembleDebug --no-daemon
